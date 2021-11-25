@@ -1,4 +1,5 @@
 import React from "react";
+import {  Link } from "react-router-dom";
 import "./Header.css";
 // import HeadLogo from "./home-bg.jpg";
 
@@ -19,11 +20,10 @@ return (
                     <div class="bar"></div>
                 </div>
                 <ul>
-                    <li><a href="#hero" data-after="Home">Home</a></li>
-                    <li><a href="#about" data-after="About">About</a></li>
-
-                    <li><a href="#contactForm" data-after="Contact">Contact</a></li>
-                    <li><a href="#footer" data-after="footer">Get in touch</a></li>
+                    <li> <Link  to="/" >Home</Link> </li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                   
                 </ul>
             </div>
         </div>

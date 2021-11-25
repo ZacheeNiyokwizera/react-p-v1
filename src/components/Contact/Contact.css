@@ -1,0 +1,254 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Allura', cursive;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span {
+    color: teal;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid teal;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+.cta:hover {
+    color: white;
+    background-color: teal;
+}
+
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.brand h1 span {
+    color: teal;
+
+}
+
+/* Contact */
+
+.contact {
+    padding: 15rem 0 20rem 0;
+    text-align: center;
+    background:  center no-repeat;
+    background-size: cover;
+    animation: contact-bg 20s infinite;
+}
+
+.contact-heading {
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    text-shadow: 0 1rem 2rem #000;
+    margin-bottom: 8rem;
+}
+
+.contact-form {
+    width: 70rem;
+    height: 50rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: auto;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 3rem #0000;
+    padding: 5rem;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.input-groups {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-groups .input-group {
+    width: 48.5%;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 3rem 1rem 1rem 1rem;
+    background-color: #ccc;
+    border: 0.1rem solid #ccc;
+    font-size: 1.4rem;
+    color: #000;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    transition: border 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border: 0.0rem solid #ccc;
+}
+
+.input-group label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #ccc;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    margin-left: -2px;
+    background-color: teal;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.form-btn:hover {
+    background-color: #fcc330;
+}
+
+.input-group textarea {
+    max-height: 15rem;
+    max-width: 100%;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-top: 30px;
+    display: none;
+}
+
+@keyframes contact-bg {
+    0% {
+        background-color: #3d3d3d;
+    }
+    25% {
+        background-color: #ced8e4;
+    }
+    50% {
+        background-color: #1e81f3;
+    }
+    75% {
+        background-color: #ff7842;
+    }
+    100% {
+        background-color: #3d3d3d;
+    }
+}
+
+
+/* End of Contact */
+
+
+
+/* End  Media Query For Desktop */
+
+@media (max-width: 1000px) {
+    .footer-link {
+        padding: 0.3rem 2rem;
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        margin: 0;
+    }
+    .contact-heading {
+        font-size: 4rem;
+    }
+    .contact-form {
+        padding: 2rem;
+        height: 40rem;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+ 
+}
